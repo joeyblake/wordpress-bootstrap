@@ -11,13 +11,13 @@ To use them in your wordpress plugin admin you need to copy the css js and image
 Register the css and js files in your plugin init file:
 
 `wp_register_style( 'boostrap_css', plugins_url('css/bootstrap.css', __FILE__) );`    
-`wp_register_style( 'boostrap_responsive_css', plugins_url('css/bootstrap-responsive.css', __FILE__) );`
+`wp_register_style( 'bootstrap_responsive_css', plugins_url('css/bootstrap-responsive.css', __FILE__) );`
 `wp_register_script( 'bootstrap_js', plugins_url('js/bootstrap.js', __FILE__) ); `
 
 Add call them in your "settings" function:
 
-`wp_enqueue_style('boostrap_css');`
-`wp_enqueue_style('boostrap_responsive_css');`
+`wp_enqueue_style('bootstrap_css');`
+`wp_enqueue_style('boosttrap_responsive_css');`
 `wp_enqueue_script('bootstrap_js');`
 
 Then setup your settings wrapper div with the class.
