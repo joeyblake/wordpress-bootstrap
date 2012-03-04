@@ -82,12 +82,12 @@ body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:
 .wp_bootstrap ul ul,.wp_bootstrap ul ol,.wp_bootstrap ol ol,.wp_bootstrap ol ul{margin-bottom:0;}
 .wp_bootstrap ul{list-style:disc;}
 .wp_bootstrap ol{list-style:decimal;}
-.wp_bootstrap li{line-height:18px;}
+.wp_bootstrap li{line-height:18px;margin-bottom:0;}
 .wp_bootstrap ul.unstyled,.wp_bootstrap ol.unstyled{margin-left:0;list-style:none;}
 .wp_bootstrap dl{margin-bottom:18px;}
 .wp_bootstrap dt,.wp_bootstrap dd{line-height:18px;}
 .wp_bootstrap dt{font-weight:bold;}
-.wp_bootstrap dd{margin-left:9px;}
+.wp_bootstrap dd{margin-left:9px;margin-bottom:0;}
 .wp_bootstrap hr{margin:18px 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff;}
 .wp_bootstrap strong{font-weight:bold;}
 .wp_bootstrap em{font-style:italic;}

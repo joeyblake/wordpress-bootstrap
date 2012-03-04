@@ -398,6 +398,7 @@ body {
 }
 .wp_bootstrap li {
   line-height: 18px;
+  margin-bottom: 0;
 }
 .wp_bootstrap ul.unstyled,
 .wp_bootstrap ol.unstyled {
@@ -416,6 +417,7 @@ body {
 }
 .wp_bootstrap dd {
   margin-left: 9px;
+  margin-bottom: 0;
 }
 .wp_bootstrap hr {
   margin: 18px 0;
