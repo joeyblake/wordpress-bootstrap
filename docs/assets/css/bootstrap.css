@@ -118,7 +118,6 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: #ffffff;
 }
 .wp_bootstrap a {
   color: #0088cc;
@@ -486,6 +485,66 @@ body {
 }
 .wp_bootstrap cite {
   font-style: normal;
+}
+.popover h1,
+.popover h2,
+.popover h3,
+.popover h4,
+.popover h5,
+.popover h6 {
+  margin: 0;
+  font-weight: bold;
+  color: #333333;
+  text-rendering: optimizelegibility;
+}
+.popover h1 small,
+.popover h2 small,
+.popover h3 small,
+.popover h4 small,
+.popover h5 small,
+.popover h6 small {
+  font-weight: normal;
+  color: #999999;
+}
+.popover h1 {
+  font-size: 30px;
+  line-height: 36px;
+}
+.popover h1 small {
+  font-size: 18px;
+}
+.popover h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+.popover h2 small {
+  font-size: 18px;
+}
+.popover h3 {
+  line-height: 27px;
+  font-size: 18px;
+}
+.popover h3 small {
+  font-size: 14px;
+}
+.popover h4,
+.popover h5,
+.popover h6 {
+  line-height: 18px;
+}
+.popover h4 {
+  font-size: 14px;
+}
+.popover h4 small {
+  font-size: 12px;
+}
+.popover h5 {
+  font-size: 12px;
+}
+.popover h6 {
+  font-size: 11px;
+  color: #999999;
+  text-transform: uppercase;
 }
 .wp_bootstrap code,
 .wp_bootstrap pre {
@@ -3202,7 +3261,7 @@ body {
   width: 0;
   height: 0;
 }
-.wp_bootstrap .popover {
+.popover {
   position: absolute;
   top: 0;
   left: 0;
@@ -3210,19 +3269,19 @@ body {
   display: none;
   padding: 5px;
 }
-.wp_bootstrap .popover.top {
+.popover.top {
   margin-top: -5px;
 }
-.wp_bootstrap .popover.right {
+.popover.right {
   margin-left: 5px;
 }
-.wp_bootstrap .popover.bottom {
+.popover.bottom {
   margin-top: 5px;
 }
-.wp_bootstrap .popover.left {
+.popover.left {
   margin-left: -5px;
 }
-.wp_bootstrap .popover.top .arrow {
+.popover.top .arrow {
   bottom: 0;
   left: 50%;
   margin-left: -5px;
@@ -3230,7 +3289,7 @@ body {
   border-right: 5px solid transparent;
   border-top: 5px solid #000000;
 }
-.wp_bootstrap .popover.right .arrow {
+.popover.right .arrow {
   top: 50%;
   left: 0;
   margin-top: -5px;
@@ -3238,7 +3297,7 @@ body {
   border-bottom: 5px solid transparent;
   border-right: 5px solid #000000;
 }
-.wp_bootstrap .popover.bottom .arrow {
+.popover.bottom .arrow {
   top: 0;
   left: 50%;
   margin-left: -5px;
@@ -3246,7 +3305,7 @@ body {
   border-right: 5px solid transparent;
   border-bottom: 5px solid #000000;
 }
-.wp_bootstrap .popover.left .arrow {
+.popover.left .arrow {
   top: 50%;
   right: 0;
   margin-top: -5px;
@@ -3254,12 +3313,12 @@ body {
   border-bottom: 5px solid transparent;
   border-left: 5px solid #000000;
 }
-.wp_bootstrap .popover .arrow {
+.popover .arrow {
   position: absolute;
   width: 0;
   height: 0;
 }
-.wp_bootstrap .popover-inner {
+.popover-inner {
   padding: 3px;
   width: 280px;
   overflow: hidden;
@@ -3272,7 +3331,7 @@ body {
   -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
-.wp_bootstrap .popover-title {
+.popover-title {
   padding: 9px 15px;
   line-height: 1;
   background-color: #f5f5f5;
@@ -3281,7 +3340,7 @@ body {
   -moz-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
 }
-.wp_bootstrap .popover-content {
+.popover-content {
   padding: 14px;
   background-color: #ffffff;
   -webkit-border-radius: 0 0 3px 3px;
@@ -3291,9 +3350,9 @@ body {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-.wp_bootstrap .popover-content p,
-.wp_bootstrap .popover-content ul,
-.wp_bootstrap .popover-content ol {
+.popover-content p,
+.popover-content ul,
+.popover-content ol {
   margin-bottom: 0;
 }
 .wp_bootstrap .thumbnails {
