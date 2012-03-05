@@ -28,11 +28,7 @@ Wrap the UI you want to style with Twitter Bootstrap in a namespaced container, 
 
 #How did we do this?
 
-With the power of [less](http://lesscss.org/). 
-
-Twitter Bootstrap makes use of less in its stylesheets. We simply prefixed Twitter's styles with `.wp_bootstrap`.
-
-Easy peasy. 
+With the power of [less](http://lesscss.org/). Twitter Bootstrap makes use of less in its stylesheets. We simply prefixed Twitter's styles with `.wp_bootstrap`.
 
 #Build bootstrap for WordPress
 
