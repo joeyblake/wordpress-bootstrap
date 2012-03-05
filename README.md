@@ -6,21 +6,21 @@ entire Twitter Bootstrap package: base CSS, responsive scaffolding, buttons, tab
 
 To use the toolkit with your plugin:
 
-1. Copy the `css`, `js`, and `images` folders into your plugin directory. 
+Copy the `css`, `js`, and `images` folders into your plugin directory. 
 
-2. Register the css and js files in your plugin `init` callback:
+Register the css and js files in your plugin `init` callback:
 
     wp_register_style( 'boostrap_css', plugins_url('css/bootstrap.css', __FILE__) );
     wp_register_style( 'bootstrap_responsive_css', plugins_url('css/bootstrap-responsive.css', __FILE__) );
     wp_register_script( 'bootstrap_js', plugins_url('js/bootstrap.js', __FILE__) );
 
-3. Then, enqueue these files any time your UI depends on them:
+Then, enqueue these files any time your UI depends on them:
 
     wp_enqueue_style('bootstrap_css');
     wp_enqueue_style('boosttrap_responsive_css');
     wp_enqueue_script('bootstrap_js');
 
-4. Wrap the UI you want to style with Twitter Bootstrap in a namespaced container, e.g.,
+Wrap the UI you want to style with Twitter Bootstrap in a namespaced container, e.g.,
 
     <div class="wp-bootstrap">
       <!-- Twitter Bootstrap styles are applied here -->
