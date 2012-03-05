@@ -1,4 +1,4 @@
-#Use Twitter Bootstrap in your WordPress plugins
+##Use Twitter Bootstrap in your WordPress plugins
 
 This namespaced version of [Twitter Bootstrap](http://twitter.github.com/bootstrap/) specifically for using 
 in the development of awesome User Interfaces for WordPress plugins. The toolkit gives you access to the 
@@ -26,11 +26,11 @@ Wrap the UI you want to style with Twitter Bootstrap in a namespaced container, 
       <!-- Twitter Bootstrap styles are applied here -->
     </div>
 
-#How did we do this?
+##How did we do this?
 
 With the power of [less](http://lesscss.org/). Twitter Bootstrap makes use of less in its stylesheets. We simply prefixed Twitter's styles with `.wp_bootstrap`.
 
-#Build bootstrap for WordPress
+##Build bootstrap for WordPress
 
 We have included a makefile with convenience methods for working with the Bootstrap library.
 
@@ -42,4 +42,8 @@ Runs the LESS compiler to rebuild the `/less` files and compiles the docs pages.
 This is a convenience method for watching just Less files and automatically building them whenever you save. 
 Requires the Watchr gem.
 
+##About the Developers
 
+Twitter Bootstrap for WordPress was forged by [Joey Blake](http://github.com/joeyblake) 
+for [Fat Panda](http://fatpandadev.com). But it wouldn't have been possible without the awesome
+work by the Twitter guys who made [Twitter Bootstrap](http://twitter.github.com/bootstrap/). 
