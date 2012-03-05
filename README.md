@@ -1,8 +1,9 @@
 ##Use Twitter Bootstrap in your WordPress plugins
 
-This namespaced version of [Twitter Bootstrap](http://twitter.github.com/bootstrap/) specifically for using 
-in the development of awesome User Interfaces for WordPress plugins. The toolkit gives you access to the 
-entire Twitter Bootstrap package: base CSS, responsive scaffolding, buttons, tabs, forms, and javascript plugins.
+This namespaced version of [Twitter Bootstrap](http://twitter.github.com/bootstrap/) is specifically for crafting
+awesome, responsive UI for WordPress plugins. The toolkit gives you access to the 
+entire Twitter Bootstrap package: base CSS, responsive scaffolding, buttons, tabs, forms, and javascript plugins,
+so that you can design with the widest possible palette of flexible UI.
 
 To use the toolkit with your plugin:
 
