@@ -1,50 +1,49 @@
-WP ADMIN TWITTER BOOTSTRAP
-==========================
+#Use Twitter Bootstrap in your WordPress plugins
 
-This a namespaced version of twitter bootstrap specifically for using in the wordpress admin menus.
-The less files have been prefixed with. 
+This namespaced version of [Twitter Bootstrap](http://twitter.github.com/bootstrap/) specifically for using 
+in the development of awesome User Interfaces for WordPress plugins. The toolkit gives you access to the 
+entire Twitter Bootstrap package: base CSS, responsive scaffolding, buttons, tabs, forms, and javascript plugins.
 
-`.wp_bootstrap`
+To use the toolkit with your plugin:
 
-To use them in your wordpress plugin admin you need to copy the css js and images into your plugin directory. 
+1. Copy the `css`, `js`, and `images` folders into your plugin directory. 
 
-Register the css and js files in your plugin init file:
+2. Register the css and js files in your plugin `init` callback:
 
-`wp_register_style( 'boostrap_css', plugins_url('css/bootstrap.css', __FILE__) );`    
-`wp_register_style( 'bootstrap_responsive_css', plugins_url('css/bootstrap-responsive.css', __FILE__) );`
-`wp_register_script( 'bootstrap_js', plugins_url('js/bootstrap.js', __FILE__) ); `
+    wp_register_style( 'boostrap_css', plugins_url('css/bootstrap.css', __FILE__) );
+    wp_register_style( 'bootstrap_responsive_css', plugins_url('css/bootstrap-responsive.css', __FILE__) );
+    wp_register_script( 'bootstrap_js', plugins_url('js/bootstrap.js', __FILE__) );
 
-Add call them in your "settings" function:
+3. Then, enqueue these files any time your UI depends on them:
 
-`wp_enqueue_style('bootstrap_css');`
-`wp_enqueue_style('boosttrap_responsive_css');`
-`wp_enqueue_script('bootstrap_js');`
+    wp_enqueue_style('bootstrap_css');
+    wp_enqueue_style('boosttrap_responsive_css');
+    wp_enqueue_script('bootstrap_js');
 
-Then setup your settings wrapper div with the class.
+4. Wrap the UI you want to style with Twitter Bootstrap in a namespaced container, e.g.,
 
-`wp-bootstrap`
+    <div class="wp-bootstrap">
+      <!-- Twitter Bootstrap styles are applied here -->
+    </div>
 
-And you will have access to the bootstrap grid, responsiveness, and javascript plugins (modals, popovers, etc.)
-See the bootstrap docs for details.
+#How did we do this?
 
+With the power of [less](http://lesscss.org/). 
 
-TWITTER BOOTSTRAP
-=================
+Twitter Bootstrap makes use of less in its stylesheets. We simply prefixed Twitter's styles with `.wp_bootstrap`.
 
-Bootstrap is Twitter's toolkit for kickstarting CSS for websites, apps, and more. It includes base CSS styles for typography, forms, buttons, tables, grids, navigation, alerts, and more.
+Easy peasy. 
 
-To get started -- checkout http://twitter.github.com/bootstrap!
-
-
-Developers
-----------
+#Build bootstrap for WordPress
 
 We have included a makefile with convenience methods for working with the Bootstrap library.
 
 + **build** - `make`
-Runs the LESS compiler to rebuild the `/less` files and compiles the docs pages. Requires lessc and uglify-js. <a href="http://twitter.github.com/bootstrap/less.html#compiling">Read more in our docs &raquo;</a>
+Runs the LESS compiler to rebuild the `/less` files and compiles the docs pages. Requires lessc and uglify-js. 
+[Read more in Twitter's docs](http://twitter.github.com/bootstrap/less.html#compiling).
 
 + **watch** - `make watch`
-This is a convenience method for watching just Less files and automatically building them whenever you save. Requires the Watchr gem.
+This is a convenience method for watching just Less files and automatically building them whenever you save. 
+Requires the Watchr gem.
 
 
