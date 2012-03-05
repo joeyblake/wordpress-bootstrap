@@ -23,7 +23,7 @@ Then, enqueue these files any time your UI depends on them:
 
 Wrap the UI you want to style with Twitter Bootstrap in a namespaced container, e.g.,
 
-    <div class="wp-bootstrap">
+    <div class="wp_bootstrap">
       <!-- Twitter Bootstrap styles are applied here -->
     </div>
 
