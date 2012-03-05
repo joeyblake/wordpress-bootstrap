@@ -6,7 +6,7 @@ entire Twitter Bootstrap package: base CSS, responsive scaffolding, buttons, tab
 
 To use the toolkit with your plugin:
 
-Copy the `css`, `js`, and `images` folders into your plugin directory. 
+Copy the `css`, `js`, and `images` folders from our `bootstrap` folder into your plugin directory. 
 
 Register the css and js files in your plugin `init` callback:
 
