@@ -10,9 +10,9 @@ Copy the `css`, `js`, and `images` folders into your plugin directory.
 
 Register the css and js files in your plugin `init` callback:
 
-    wp_register_style( 'boostrap_css', plugins_url('css/bootstrap.css', __FILE__) );
-    wp_register_style( 'bootstrap_responsive_css', plugins_url('css/bootstrap-responsive.css', __FILE__) );
-    wp_register_script( 'bootstrap_js', plugins_url('js/bootstrap.js', __FILE__) );
+    wp_register_style('boostrap_css', plugins_url('css/bootstrap.css', __FILE__));
+    wp_register_style('bootstrap_responsive_css', plugins_url('css/bootstrap-responsive.css', __FILE__));
+    wp_register_script('bootstrap_js', plugins_url('js/bootstrap.js', __FILE__));
 
 Then, enqueue these files any time your UI depends on them:
 
