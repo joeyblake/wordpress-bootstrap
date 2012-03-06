@@ -11,6 +11,7 @@ form {
   margin: 0 0 @baseLineHeight;
 }
 
+
 fieldset {
   padding: 0;
   margin: 0;
@@ -113,6 +114,13 @@ input[type="file"] {
   background-color: @white;
   background-color: initial;
   .box-shadow(none);
+}
+
+input[type="text"], input[type="password"], textarea {
+-moz-box-sizing: initial;
+-webkit-box-sizing: initial;
+-ms-box-sizing: initial;
+box-sizing: initial;
 }
 
 // Help out input buttons
